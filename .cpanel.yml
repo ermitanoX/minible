@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/mallvirtual94x/public_html/
+    - export DEPLOYPATH=/home2/mallvirtual94x/minible/
     - /bin/rsync -av * $DEPLOYPATH
