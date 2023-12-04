@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/mallvirtual94x/public_html/login
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home2/mallvirtual94x/public_html/
+    - /bin/rsync -a --exclude 'index.php' public/ $DEPLOYPATH
